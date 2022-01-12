@@ -154,3 +154,9 @@
     transition: ease 300ms;
   }
 }
+
+@media screen and (max-width: 323px) {
+}
+.menuItems {
+  width: 105vw;
+}

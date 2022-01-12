@@ -139,9 +139,26 @@
     max-width: 18rem;
     padding-block: 3rem;
   }
+}
 
-  /* .banWrapper {
-    background-image: none;
-    background-color: #1b262c;
-  } */
+@media screen and (max-width: 449px) {
+  .banText {
+    margin-top: -6rem;
+    padding: 1rem 0rem 1rem 0.01rem;
+    text-align: left;
+    width: 18rem;
+  }
+  .banLeft {
+    max-width: 18rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .banText {
+    padding: 1rem 1rem 1rem 0.01rem;
+    width: 17rem;
+  }
+  .banLeft {
+    width: 17rem;
+  }
 }

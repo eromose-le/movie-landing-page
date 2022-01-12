@@ -52,7 +52,7 @@ const Navbar = ({ open, setOpen }) => {
         <ul
           className="menuItems"
           onClick={() => setOpen(false)}
-          style={{ right: open ? '0px' : '-100vw' }}
+          style={{ right: open ? '0px' : '-106vw' }}
         >
           <li className="menuItem">
             <Link className="link" to="/">
