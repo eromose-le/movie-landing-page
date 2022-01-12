@@ -1,7 +1,7 @@
 import '../styles/sectionB.css';
 
-import Track1 from '../assets/track-1.svg';
-import Track2 from '../assets/track-2.svg';
+import Track1 from '../assets/track-1.png';
+import Track2 from '../assets/track-2.png';
 import Path from '../assets/Path.svg';
 import Pulse from 'react-reveal/Pulse';
 

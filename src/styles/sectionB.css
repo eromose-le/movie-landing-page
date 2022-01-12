@@ -16,6 +16,9 @@
   width: 219px;
   height: 376px;
   cursor: progress;
+  border-radius: 20px;
+  margin-right: 0.4rem;
+  box-shadow: inset 0px 30px 20px rgba(26, 26, 26, 0.25);
 }
 
 .bLeft,
@@ -91,6 +94,32 @@
   .bImage {
     width: 296px;
     height: 493px;
+  }
+}
+
+@media screen and (max-width: 994px) {
+  .bImage {
+    margin-top: 3rem;
+  }
+
+  .bImage:first-child {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 773px) {
+  .bImage {
+    width: 16.5rem;
+    height: 28.8125rem;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .bImage {
+    margin-top: 10px;
+    margin-bottom: 1rem;
+    width: 18.5rem;
+    height: 30.8125rem;
   }
 }
 
