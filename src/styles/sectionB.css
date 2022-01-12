@@ -34,7 +34,8 @@
 }
 
 .bText {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  padding-right: 1rem;
   font-weight: 500;
   opacity: 0.6;
 }
