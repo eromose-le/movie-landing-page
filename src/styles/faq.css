@@ -4,7 +4,7 @@
   width: 100%;
   background-color: var(--color-bgDark);
   display: flex;
-  padding: 6rem 10rem 4rem 10rem;
+  padding: 6rem 10rem 2rem 10rem;
 }
 
 .faqWrapper {
