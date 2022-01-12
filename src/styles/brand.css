@@ -2,7 +2,6 @@
 
 .brand {
   width: 100%;
-  background-color: #101010;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,6 +9,7 @@
 }
 
 .brandWrapper {
+  background-color: var(--color-bgLight);
   display: flex;
   align-items: center;
   justify-content: space-between;
