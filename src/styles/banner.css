@@ -23,7 +23,6 @@
   background: url('../assets/banner.svg') no-repeat 100%;
   background-size: contain;
   padding: 4rem 0 3rem 0;
-  /* background: pink; */
 }
 
 .banLeft {
@@ -32,7 +31,6 @@
   padding: 1rem 0 1rem 0;
   width: 30rem;
   color: var(--color-text);
-  /* background: rgb(95, 40, 49); */
 }
 
 .banLeft > * {
@@ -105,11 +103,23 @@
   }
 }
 
-/* @media screen and (max-width: 865px) {
-  .banner {
-    max-width: 90rem;
+@media screen and (max-width: 929px) {
+  .banText {
+    padding: 1rem 2.4rem 1rem 0;
   }
-} */
+}
+
+@media screen and (max-width: 878px) {
+  .banWrapper {
+    background-image: none;
+    background-color: #1b262c;
+  }
+
+  .banText {
+    padding: 1rem 0rem 1rem 0;
+    width: 25rem;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .banner {
@@ -121,15 +131,17 @@
     font-size: 2rem;
     font-weight: 500;
     margin-top: -5rem;
-    padding: 1rem 1rem 1rem 0;
+    padding: 1rem 3rem 1rem 0.01rem;
+    text-align: left;
+    width: 19rem;
   }
   .banLeft {
     max-width: 18rem;
     padding-block: 3rem;
   }
 
-  .banWrapper {
+  /* .banWrapper {
     background-image: none;
     background-color: #1b262c;
-  }
+  } */
 }

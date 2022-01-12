@@ -141,6 +141,11 @@
   .bLeft {
     padding: 2.8125rem;
   }
+
+  .bImage {
+    width: 14.5rem;
+    height: 23.8125rem;
+  }
 }
 
 @media screen and (max-width: 405px) {
