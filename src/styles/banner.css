@@ -1,0 +1,133 @@
+@import url('./base.css');
+
+.banner {
+  max-width: 90rem;
+  height: auto;
+  /* height: calc(90vh - 115px); */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1b262c;
+  /* padding: 1rem 0 1rem 0; */
+}
+
+.banWrapper {
+  /* object-fit: fill;
+  background-image: url('../assets/banner.svg');
+  background-repeat: round;
+  background-repeat-y: no-repeat;
+  width: 100%;
+  height: 100%; */
+  width: 100%;
+  background: url('../assets/banner.svg') no-repeat center;
+  background-size: contain;
+  padding: 4rem 0 3rem 0;
+  /* background: pink; */
+}
+
+.banLeft {
+  margin-top: 5rem;
+  margin-left: 12%;
+  padding: 1rem 0 1rem 0;
+  width: 30rem;
+  color: var(--color-text);
+  /* background: rgb(95, 40, 49); */
+}
+
+.banLeft > * {
+  margin-bottom: 1.5rem;
+}
+
+.banText {
+  font-size: 2.1rem;
+  font-weight: 500;
+  margin-top: -4rem;
+}
+
+.banButton {
+  color: var(--color-text);
+  background-color: var(--color-link);
+  border: none;
+  width: 7rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transform: translate(0, 0);
+  cursor: pointer;
+}
+
+.banButton:hover {
+  color: var(--color-link);
+  background-color: var(--color-text);
+  transform: translate(0, -2px);
+  transition: ease 500ms;
+}
+
+.banPlatforms {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.banApple {
+  width: 7rem;
+  margin-right: 1rem;
+  cursor: progress;
+}
+.banAndroid {
+  width: 7rem;
+  cursor: progress;
+}
+
+@media screen and (max-width: 1024px) {
+  .banText {
+    font-size: 1.6rem;
+    padding: 1rem 7rem 1rem 0;
+    font-weight: 500;
+  }
+
+  .banLeft {
+    max-width: 21rem;
+  }
+
+  .banner {
+    max-width: 64rem;
+  }
+
+  .banWrapper {
+    padding: 0 0 0 0;
+  }
+}
+
+/* @media screen and (max-width: 865px) {
+  .banner {
+    max-width: 90rem;
+  }
+} */
+
+@media screen and (max-width: 480px) {
+  .banner {
+    /* height: calc(70vh - 115px); */
+    width: 100%;
+  }
+
+  .banText {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: -5rem;
+    padding: 1rem 1rem 1rem 0;
+  }
+  .banLeft {
+    max-width: 18rem;
+  }
+
+  .banWrapper {
+    background-image: none;
+    background-color: #1b262c;
+  }
+}

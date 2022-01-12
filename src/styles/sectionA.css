@@ -1,0 +1,126 @@
+@import url('./base.css');
+
+.sectionA {
+  width: 100%;
+  background-color: var(--color-bgDark);
+}
+
+.aWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 10rem 3rem 10rem;
+}
+.aLeft {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 1rem;
+  margin-right: 2rem;
+}
+
+.aImage {
+  width: 150px;
+  height: 150px;
+}
+
+.aRight {
+  flex: 1;
+  color: var(--color-text);
+}
+
+.aRight > * {
+  margin-bottom: 1rem;
+}
+
+.aTitle {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.aText {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+.aSubText {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.aSubText:hover > * {
+  color: #ccc !important;
+}
+
+.aPath {
+  margin-right: 1rem;
+  width: 14px;
+  height: 23px;
+  transform: translate(0, 0);
+}
+
+.aPathText {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--color-link);
+  transform: translate(0, 0);
+}
+
+.aPath:hover,
+.aPathText:hover {
+  transform: translate(0, -1px);
+  transition: ease 300ms;
+}
+
+@media screen and (max-width: 1001px) {
+  .aWrapper {
+    flex-direction: column;
+    padding: 2rem auto 2rem auto;
+    overflow: hidden;
+  }
+  .aLeft {
+    margin-right: 0px;
+  }
+  .aImage {
+    width: 100px;
+    height: 100px;
+  }
+
+  .aTitle {
+    font-size: 2.8rem;
+  }
+
+  .aRight {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 653px) {
+  .aLeft {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .aRight {
+    width: 25rem;
+  }
+  .aTitle {
+    margin-top: 1.5rem;
+    /* line-height: 10px; */
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 543px) {
+  .aRight {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .aRight {
+    width: 20rem;
+  }
+}

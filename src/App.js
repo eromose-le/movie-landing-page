@@ -1,24 +1,52 @@
-import logo from './logo.svg';
+import * as React from 'react';
+import { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import LoaderComponent from './components/Loader';
+import Home from './pages/Home';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    loading &&
+      setTimeout(() => {
+        setLoading(false);
+      }, 3000);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {loading ? (
+        <LoaderComponent
+          bgColor="#7971e9"
+          textColor="#7971e9"
+          iconSize={parseInt('50')}
+          title="Radiohead"
+          type="box-rectangular"
+        />
+      ) : (
+        <div className="App">
+          <BrowserRouter>
+            <React.Suspense
+              fallback={
+                <LoaderComponent
+                  bgColor="#7971e9"
+                  textColor="#7971e9"
+                  iconSize={parseInt('50')}
+                  title="Radiohead"
+                  type="box-rectangular"
+                />
+              }
+            >
+              <Routes>
+                <Route path="/" element={<Home />} />
+              </Routes>
+            </React.Suspense>
+          </BrowserRouter>
+        </div>
+      )}
+    </>
   );
 }
 

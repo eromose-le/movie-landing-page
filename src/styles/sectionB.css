@@ -1,0 +1,114 @@
+@import url('./base.css');
+
+.sectionB {
+  width: 100%;
+  background-color: var(--color-bgDark);
+}
+
+.bWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 10rem 2rem 10rem;
+}
+
+.bImage {
+  width: 196px;
+  height: 393px;
+  cursor: progress;
+}
+
+.bLeft,
+.bRight {
+  flex: 1;
+  color: var(--color-text);
+}
+
+.bLeft > * {
+  margin-bottom: 1rem;
+}
+
+.bTitle {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.bText {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+.bSubText {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bSubText:hover > * {
+  color: #ccc !important;
+}
+
+.bPath {
+  margin-right: 1rem;
+  width: 14px;
+  height: 23px;
+  transform: translate(0, 0);
+}
+
+.bPathText {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--color-link);
+  transform: translate(0, 0);
+}
+
+.bPath:hover,
+.bPathText:hover {
+  transform: translate(0, -1px);
+  transition: ease 300ms;
+}
+
+/* RIGHT */
+
+.bRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 1001px) {
+  .bWrapper {
+    flex-direction: column;
+    padding: 4rem auto 2rem auto;
+    overflow: hidden;
+  }
+  .bRight {
+    margin-right: 0px;
+  }
+  .bImage {
+    width: 296px;
+    height: 493px;
+  }
+}
+
+@media screen and (max-width: 653px) {
+  .bRight {
+    flex-direction: column;
+  }
+  .bLeft {
+    width: 25rem;
+  }
+  .bTitle {
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .bLeft {
+    width: 20rem;
+  }
+}
+
+/* padding-left: 3rem; */

@@ -1,0 +1,88 @@
+@import url('./base.css');
+
+.faq {
+  width: 100%;
+  background-color: var(--color-bgDark);
+  display: flex;
+  padding: 6rem 10rem 4rem 10rem;
+}
+
+.faqWrapper {
+  /* background: pink; */
+  width: 100%;
+  color: var(--color-text);
+}
+
+.faqTitle {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.faqContents {
+  /* background: blue; */
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.faqContent {
+  max-width: 40%;
+  /* background: grey; */
+  margin: 0.5rem 5rem 0.5rem 0px;
+}
+
+.faqTop {
+  display: flex;
+  align-items: center;
+}
+
+.faqLine {
+  background-color: var(--color-link);
+  width: 5px;
+  height: 30px;
+  margin-right: 0.8rem;
+}
+
+.faqTitleText {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.faqText {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.6;
+  margin: 1rem 0 1rem 0;
+  margin-left: 12px;
+}
+
+@media screen and (max-width: 1120px) {
+  .faqContent {
+    max-width: 35%;
+    margin: 0.5rem 5rem 0.5rem 0px;
+  }
+}
+
+@media screen and (max-width: 856px) {
+  .faq {
+    padding: 4rem 5rem 2rem 5rem;
+  }
+  .faqContent {
+    max-width: 100%;
+    /* background: grey; */
+    margin: 0.5rem 5rem 0.5rem 0px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .faqLine {
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .faq {
+    padding: 3rem 1rem 2rem 3rem;
+  }
+}

@@ -1,0 +1,156 @@
+@import url('./base.css');
+
+.navbar {
+  background-color: var(--color-bgLight);
+  color: var(--color-text);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 80px;
+}
+
+.navWrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em;
+}
+
+.navLogo {
+  width: 10rem;
+  cursor: pointer;
+}
+
+.navItems {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navItem {
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transform: translate(0, 0);
+}
+
+.navItem:hover {
+  color: var(--color-link);
+  transform: translate(0, -1px);
+  transition: ease 300ms;
+}
+
+.navItem:nth-child(4),
+.navItem:nth-child(5) {
+  color: var(--color-link);
+  border: 1px solid var(--color-link);
+  width: 7rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.navItem:nth-child(4):hover,
+.navItem:nth-child(5):hover {
+  color: var(--color-text);
+  background-color: var(--color-link);
+}
+
+/* toggle */
+
+.hamburger {
+  display: none;
+}
+
+.menuItems {
+  display: none;
+}
+
+@media screen and (max-width: 920px) {
+  /* .navbar {
+    padding: 0 1.25rem;
+  } */
+
+  .navItems {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 1.5625rem;
+    height: 1.25rem;
+    cursor: pointer;
+  }
+
+  .xHamburger {
+    font-weight: 600;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .line {
+    width: 100%;
+    height: 0.1875rem;
+    background-color: white;
+  }
+
+  .menuItems {
+    position: fixed;
+    height: calc(100vh - 70px);
+    width: 100vw;
+    top: 70px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    background-color: var(--color-bgLight);
+    color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: 999;
+    transition: all 1s ease;
+  }
+
+  .menuItem:hover {
+    color: var(--color-link);
+  }
+
+  .menuItem:nth-child(4),
+  .menuItem:nth-child(5) {
+    color: var(--color-link);
+    border: 1px solid var(--color-link);
+    width: 7rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .menuItem:nth-child(4):hover,
+  .menuItem:nth-child(5):hover {
+    color: var(--color-text);
+    background-color: var(--color-link);
+    transition: ease 300ms;
+  }
+}

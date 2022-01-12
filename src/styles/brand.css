@@ -1,0 +1,53 @@
+@import url('./base.css');
+
+.brand {
+  width: 100%;
+  background-color: #101010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bgLight);
+}
+
+.brandWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 35px 0 35px 0;
+  width: 80%;
+}
+
+.brandImg {
+  max-width: 120px;
+  max-height: 17px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .brandImg {
+    max-width: 80px;
+    max-height: 40px;
+    margin-left: 1rem;
+  }
+
+  .brandWrapper {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7rem;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .brandImg {
+    max-width: 120px;
+    max-height: 70px;
+    margin-left: 19px;
+  }
+
+  .brandWrapper {
+    padding: 5px;
+  }
+}

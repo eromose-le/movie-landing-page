@@ -1,0 +1,56 @@
+@import url('./base.css');
+
+.social {
+  width: 100%;
+  background-color: var(--color-bgDark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  width: 30%;
+}
+
+.socialIconContainer {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialIconContainer:hover {
+  background-color: var(--color-link);
+  transition: ease 500ms;
+  transform: translate(0, -3px);
+}
+
+.socialIcon {
+  width: 50%;
+  height: 50%;
+  transform: translate(0, 0);
+  cursor: pointer;
+}
+
+.socialIcon:hover {
+  transition: ease 500ms;
+  transform: translate(0, -1px);
+}
+
+@media screen and (max-width: 791px) {
+  .socialWrapper {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .socialWrapper {
+    width: 50%;
+  }
+}
