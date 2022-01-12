@@ -13,8 +13,8 @@
 }
 
 .bImage {
-  width: 196px;
-  height: 393px;
+  width: 219px;
+  height: 376px;
   cursor: progress;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .bTitle {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 
