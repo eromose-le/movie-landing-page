@@ -14,9 +14,11 @@
   justify-content: space-evenly;
   padding: 10px;
   width: 30%;
+  background-color: var(--color-bgDark);
 }
 
 .socialIconContainer {
+  background-color: var(--color-bgDark);
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
