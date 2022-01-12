@@ -52,7 +52,7 @@
 .faqText {
   font-size: 1rem;
   font-weight: 500;
-  opacity: 0.6;
+  opacity: 0.6 !important;
   margin: 1rem 0 1rem 0;
   margin-left: 12px;
 }
@@ -78,6 +78,10 @@
 @media screen and (max-width: 567px) {
   .faqLine {
     height: 45px;
+  }
+
+  .faqTitle {
+    font-size: 2rem;
   }
 }
 

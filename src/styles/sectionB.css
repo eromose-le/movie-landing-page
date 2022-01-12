@@ -29,7 +29,7 @@
 }
 
 .bTitle {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 500;
 }
 
@@ -95,13 +95,14 @@
 @media screen and (max-width: 653px) {
   .bRight {
     flex-direction: column;
+    margin-top: 2rem;
   }
   .bLeft {
     width: 25rem;
   }
   .bTitle {
     margin-top: 1.5rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
