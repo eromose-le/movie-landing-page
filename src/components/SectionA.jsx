@@ -16,12 +16,14 @@ const SectionA = () => {
       <div className="aWrapper">
         <Fade top big cascade>
           <div className="aLeft">
-            <img src={Image1} alt="image1" className="aImage" />
-            <img src={Image2} alt="image2" className="aImage" />
-            <img src={Image3} alt="image3" className="aImage" />
-            <img src={Image4} alt="image4" className="aImage" />
-            <img src={Image5} alt="image5" className="aImage" />
-            <img src={Image6} alt="image6" className="aImage" />
+            <div className="aLeftSlider">
+              <img src={Image1} alt="image1" className="aImage" />
+              <img src={Image2} alt="image2" className="aImage" />
+              <img src={Image3} alt="image3" className="aImage" />
+              <img src={Image4} alt="image4" className="aImage" />
+              <img src={Image5} alt="image5" className="aImage" />
+              <img src={Image6} alt="image6" className="aImage" />
+            </div>
           </div>
         </Fade>
         <div className="aRight">

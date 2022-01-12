@@ -16,12 +16,23 @@
   flex-wrap: wrap;
   padding: 35px 0 35px 0;
   width: 80%;
+  row-gap: 0.9rem;
 }
 
 .brandImg {
   max-width: 120px;
   max-height: 17px;
   margin-left: 10px;
+}
+
+.redbull {
+  width: 3.4rem;
+  height: 2.9rem;
+}
+
+.tiktok {
+  width: 3.5rem;
+  height: 2.9rem;
 }
 
 @media screen and (max-width: 500px) {
@@ -49,5 +60,12 @@
 
   .brandWrapper {
     padding: 5px;
+  }
+}
+
+@media screen and (max-width: 367px) {
+  .brandWrapper {
+    padding: 8px !important;
+    height: 9rem;
   }
 }

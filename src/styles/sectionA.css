@@ -80,7 +80,6 @@
   .aWrapper {
     flex-direction: column;
     padding: 2rem auto 2rem auto;
-    overflow: hidden;
   }
   .aLeft {
     margin-right: 0px;
@@ -101,7 +100,13 @@
 
 @media screen and (max-width: 653px) {
   .aLeft {
+    margin-top: 2rem;
     flex-direction: row;
+    width: 100vw;
+    overflow: auto;
+  }
+  .aLeftSlider {
+    display: flex;
     flex-wrap: nowrap;
   }
   .aRight {
@@ -109,7 +114,6 @@
   }
   .aTitle {
     margin-top: 1.5rem;
-    /* line-height: 10px; */
     font-size: 2rem;
   }
 }
