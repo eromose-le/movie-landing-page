@@ -79,10 +79,6 @@
 }
 
 @media screen and (max-width: 920px) {
-  /* .navbar {
-    padding: 0 1.25rem;
-  } */
-
   .navItems {
     display: none;
   }

@@ -1,10 +1,8 @@
-import { useState } from 'react';
 import '../styles/navbar.css';
 import Logo from '../assets/Logo.svg';
 import { Link } from 'react-router-dom';
 import Pulse from 'react-reveal/Pulse';
-const Navbar = () => {
-  const [open, setOpen] = useState(false);
+const Navbar = ({ open, setOpen }) => {
   return (
     <div className="navbar">
       <div className="navWrapper">
